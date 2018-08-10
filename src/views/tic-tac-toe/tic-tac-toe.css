@@ -1,0 +1,92 @@
+.tic-tac-toe {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  width: 100%;
+}
+
+.tic-tac-toe ol,
+.tic-tac-toe ul {
+  padding-left: 30px;
+}
+
+.game-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-board {
+  margin: auto;
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.square {
+  /* background: #fff; */
+  border: 1px solid #635537;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 2em;
+  height: 2em;
+  margin-right: -1px;
+  margin-top: -5px;
+  padding: 0;
+  text-align: center;
+  width: 2em;
+  font-family: 'Aerobrush';
+  background-color: #DEA325;
+  color: #635537;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.btn-restart {
+  background-image: url('../../button_restart.png');
+  background-repeat: no-repeat;
+  width: 10em;
+  height: 10em;
+  background-size: contain;
+}
+
+/* Custom font */
+@font-face {
+  font-family: 'Aerobrush';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Aerobrush'), url('../../fonts/Aerobrush.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Herculanum';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Herculanum'), url('../../fonts/Herculanum-Regular.ttf') format('truetype')
+}
